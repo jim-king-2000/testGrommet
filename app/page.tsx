@@ -3,12 +3,12 @@
 import { Grommet, Box, List, Tip, Text, Button } from 'grommet';
 import { Gremlin } from 'grommet-icons';
 
-const data = [
-  { city: 'Boise', state: 'Idaho' },
-  { city: 'Fort Collins', state: 'Colorado' },
-  { city: 'Bay Area', state: 'California' },
-  { city: 'San Diego', state: 'California' },
-];
+// const data = [
+//   { city: 'Boise', state: 'Idaho' },
+//   { city: 'Fort Collins', state: 'Colorado' },
+//   { city: 'Bay Area', state: 'California' },
+//   { city: 'San Diego', state: 'California' },
+// ];
 
 export default function Page() {
   return (
