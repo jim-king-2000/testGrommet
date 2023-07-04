@@ -12,21 +12,19 @@ import { Gremlin } from 'grommet-icons';
 
 export default function Page() {
   return (
-    <Grommet>
-      <Box>
-        {/* <List data={data} pad="medium" border={false}>
-          {(datum) => (
-            <Tip content={datum.state} dropProps={{ align: { left: 'right' } }}>
-              <Box direction="row-responsive" gap="medium" align="center">
-                <Gremlin size="large" />
-                <Text weight="bold">{datum.city}</Text>
-              </Box>
-            </Tip>
-          )}
-        </List> */}
-        <Text>Hello grommet!</Text>
-        <Button label='test' icon={<Gremlin />} />
-      </Box>
-    </Grommet>
+    <Box>
+      {/* <List data={data} pad="medium" border={false}>
+        {(datum) => (
+          <Tip content={datum.state} dropProps={{ align: { left: 'right' } }}>
+            <Box direction="row-responsive" gap="medium" align="center">
+              <Gremlin size="large" />
+              <Text weight="bold">{datum.city}</Text>
+            </Box>
+          </Tip>
+        )}
+      </List> */}
+      <Text>Hello grommet!</Text>
+      <Button label='test' icon={<Gremlin />} />
+    </Box>
   );
 }
