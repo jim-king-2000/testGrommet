@@ -2,6 +2,7 @@
 
 import { Grommet, Box, List, Tip, Text, Button } from 'grommet';
 import { Gremlin } from 'grommet-icons';
+import { PanControl } from './PanControl';
 
 // const data = [
 //   { city: 'Boise', state: 'Idaho' },
@@ -12,7 +13,7 @@ import { Gremlin } from 'grommet-icons';
 
 export default function Page() {
   return (
-    <Box>
+    <Box gap='large'>
       {/* <List data={data} pad="medium" border={false}>
         {(datum) => (
           <Tip content={datum.state} dropProps={{ align: { left: 'right' } }}>
@@ -25,6 +26,7 @@ export default function Page() {
       </List> */}
       <Text>Hello grommet!</Text>
       <Button label='test' icon={<Gremlin />} />
+      <PanControl size='medium' />
     </Box>
   );
 }
