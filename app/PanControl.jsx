@@ -4,7 +4,7 @@ import { CaretLeftFill } from 'grommet-icons';
 function SectorBox({ angle, onClick }) {
   return (
     <Box
-      hoverIndicator align='center' justify='center' focusIndicator={false}
+      align='center' justify='center' focusIndicator={false}
       background='dark-3' width='50%' height='50%' onClick={onClick}
       style={{
         position: 'absolute',
