@@ -26,7 +26,7 @@ export default function Page() {
       </List> */}
       <Text>Hello grommet!</Text>
       <Button label='test' icon={<Gremlin />} />
-      <PanControl size='medium' />
+      <PanControl size='small' />
     </Box>
   );
 }
