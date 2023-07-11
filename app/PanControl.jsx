@@ -16,7 +16,8 @@ function SectorBox({ angle, onClick }) {
         width='calc(100% - 1px)' height='calc(100% - 1px)' align='center'
         justify='center' background='dark-3' round={{ size: 'full', corner: 'top-left' }}
         style={{
-          WebkitMaskImage: 'radial-gradient(circle farthest-side at bottom right, transparent 40%, #000 40%)'
+          WebkitMaskImage: 'radial-gradient(circle farthest-side at bottom right, transparent 40%, #000 40%)',
+          mask: 'radial-gradient(circle farthest-side at bottom right, transparent 40%, #000 40%)',
         }}
       >
         <CaretLeftFill style={{ transform: 'rotate(45deg)' }} />
