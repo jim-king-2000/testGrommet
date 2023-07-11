@@ -24,8 +24,8 @@ export default function Page() {
           </Tip>
         )}
       </List> */}
-      <Text>Hello grommet!</Text>
-      <Button label='test' icon={<Gremlin />} />
+      {/* <Text>Hello grommet!</Text>
+      <Button label='test' icon={<Gremlin />} /> */}
       <PanControl size='medium' />
     </Box>
   );

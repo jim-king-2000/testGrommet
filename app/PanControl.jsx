@@ -12,7 +12,13 @@ function SectorBox({ angle, onClick }) {
         transformOrigin: '100% 100%',
       }}
     >
-      <Box width='calc(100% - 1px)' height='calc(100% - 1px)' align='center' justify='center' background='dark-3' round={{ size: 'full', corner: 'top-left' }}>
+      <Box
+        width='calc(100% - 1px)' height='calc(100% - 1px)' align='center'
+        justify='center' background='dark-3' round={{ size: 'full', corner: 'top-left' }}
+        style={{
+          WebkitMaskImage: 'radial-gradient(circle farthest-side at bottom right, transparent 40%, #000 40%)'
+        }}
+      >
         <CaretLeftFill style={{ transform: 'rotate(45deg)' }} />
       </Box>
     </Box>
@@ -21,7 +27,7 @@ function SectorBox({ angle, onClick }) {
 
 function Circle() {
   return (
-    <Box background='dark-2' round='full' width='40%' height='40%'
+    <Box background='dark-3' round='full' width='calc(40% - 3px)' height='calc(40% - 3px)'
       margin='auto'
       style={{
         position: 'absolute',
