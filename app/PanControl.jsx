@@ -4,16 +4,17 @@ import { CaretLeftFill } from 'grommet-icons';
 function SectorBox({ angle, onClick }) {
   return (
     <Box
-      align='center' justify='center' focusIndicator={false}
-      background='dark-3' width='50%' height='50%' onClick={onClick}
+      focusIndicator={false}
+      width='50%' height='50%' onClick={onClick}
       style={{
         position: 'absolute',
         transform: `rotate(${angle}deg)`,
         transformOrigin: '100% 100%',
-        borderRadius: '100% 0 0 0',
       }}
     >
-      <CaretLeftFill style={{ transform: 'rotate(45deg)' }} />
+      <Box width='calc(100% - 1px)' height='calc(100% - 1px)' align='center' justify='center' background='dark-3' round={{ size: 'full', corner: 'top-left' }}>
+        <CaretLeftFill style={{ transform: 'rotate(45deg)' }} />
+      </Box>
     </Box>
   );
 }

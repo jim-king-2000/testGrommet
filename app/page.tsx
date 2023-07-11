@@ -13,7 +13,7 @@ import { PanControl } from './PanControl';
 
 export default function Page() {
   return (
-    <Box gap='large'>
+    <Box fill gap='large' overflow='hide'>
       {/* <List data={data} pad="medium" border={false}>
         {(datum) => (
           <Tip content={datum.state} dropProps={{ align: { left: 'right' } }}>
@@ -26,7 +26,7 @@ export default function Page() {
       </List> */}
       <Text>Hello grommet!</Text>
       <Button label='test' icon={<Gremlin />} />
-      <PanControl size='small' />
+      <PanControl size='medium' />
     </Box>
   );
 }
